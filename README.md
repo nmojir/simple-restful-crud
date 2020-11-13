@@ -8,7 +8,7 @@ With the abstractions defined in the restful-core project, you can implement CRU
 3- A search request class for the entity, like StudentSearchReqDto. --> implementing SearchRequestDto
 4- A JAX-RS service class. --> implementing AbstractCrudService
 
-*I implemented a sample-rest project for an example.
+* I implemented a sample-rest project for an example.
 
 I added brief JavaDoc for documentation. Sorry for being so brief!
 
