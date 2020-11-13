@@ -1,0 +1,142 @@
+{
+	"variables": [],
+	"info": {
+		"name": "sample-rest",
+		"_postman_id": "75770867-9eff-9486-6a83-e53a3f5a7a88",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Retrieve",
+			"request": {
+				"url": "http://localhost:8080/sample-rest/students/65536",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"url": "http://localhost:8080/sample-rest/students",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Jack\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"url": "http://localhost:8080/sample-rest/students/65536",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Jack Jones\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"url": "http://localhost:8080/sample-rest/students/65536",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Search",
+			"request": {
+				"url": "http://localhost:8080/sample-rest/students/search",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"paging\":{\r\n\t\t\"pageSize\":5,\r\n\t\t\"currentPage\": 0\r\n\t},\r\n\t\"sorting\":{\r\n\t\t\"sortField\": \"name\",\r\n\t\t\"ascending\": false\r\n\t},\r\n\t\"filters\":{\r\n\t\t\"name\":\"mojir\"\r\n\t}\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "List",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/sample-rest/students?pageSize=10&currentPage=0&sortField=name&ascending=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sample-rest",
+						"students"
+					],
+					"query": [
+						{
+							"key": "pageSize",
+							"value": "10",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "currentPage",
+							"value": "0",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "sortField",
+							"value": "name",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "ascending",
+							"value": "true",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
