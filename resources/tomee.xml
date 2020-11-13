@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tomee>
+
+	<Resource id="jdbc/sample" type="javax.sql.DataSource">
+		accessToUnderlyingConnectionAllowed = false
+		alternateUsernameAllowed = false
+		connectionProperties =
+		defaultAutoCommit = true
+		defaultReadOnly =
+		definition =
+		ignoreDefaultValues = false
+		initialSize = 0
+		jdbcDriver = com.mysql.jdbc.Driver
+		jdbcUrl = jdbc:mysql://localhost:3306/sample_db?useUnicode=yes&amp;characterEncoding=UTF-8&amp;zeroDateTimeBehavior=convertToNull
+		jtaManaged = true
+		maxActive = 20
+		maxIdle = 20
+		maxWaitTime = -1 millisecond
+		minEvictableIdleTime = 30 minutes
+		minIdle = 0
+		numTestsPerEvictionRun = 3
+		password = 
+		passwordCipher = PlainText
+		serviceId =
+		testOnBorrow = true
+		testOnReturn = false
+		testWhileIdle = false
+		timeBetweenEvictionRuns = -1 millisecond
+		userName = root
+		validationQuery = SELECT 1
+	</Resource>
+</tomee>
