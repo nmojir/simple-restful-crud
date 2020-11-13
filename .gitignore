@@ -1,0 +1,8 @@
+restful-core/target
+restful-core/.settings
+restful-core/.classpath
+restful-core/.project
+sample-rest/target
+sample-rest/.settings
+sample-rest/.classpath
+sample-rest/.project
